@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+				
+					<section>
+							<h1>مدیریت درخواست</h1>
+							<h3>در زبان های برنامه نویسی</h3>
+							<br>
+							<p>
+								<small>گردآورنده <a href="#">پژمان هادوی</a></small>
+							</p>
+						</section>
+						<section>
+								<section id="fragments">
+										<h2>درباره من</h2>
+										<p class="fragment">سه سال برنامه نویسی</p>
+										<p class="fragment">Android, Java, JS, PHP, Python, C</p>
+										<p class="fragment">node.js</p>
+										<p class="fragment"  style="direction: rtl">توسعه دهنده back-end استارتاپ تورآسو</p>
+								</section>
+						</section>
+				
+
+				<section>
+						<section id="fragments">
+								<h2>موضوعات</h2>
+								<p class="fragment"> مدیریت درخواست و واکنش در زبان ها</p>
+								<p class="fragment">sync , blocking , threads</p>
+								<p class="fragment">کاربرد این موضوعات</p>
+						</section>
+				</section>
+
+
+
+				
+
+				
+
+				<section>
+					<h1>9 months ago...</h1>
+				</section>
+
+				<section data-background="./images/javascript.png" >
+					<section id="fragments">
+						<div class = "fragment" style="position: absolute; width: 40%;  box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+								<img data-src="./images/myAvatar1.png">
+						</div>
+						<div class = "fragment" style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;" >
+								<img data-src="./images/google.png">
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h1>Searching ... :(</h1>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<img style="height:250px; width:250px;" data-src="./images/myAvatar1.png">
+						<blockquote>
+							<h6>&ldquo;جاوا اسکریپت چیست؟؟؟&rdquo;</h6>
+						</blockquote>
+				</section>
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" >
+						<img style="height:250px; width:250px;" data-src="./images/google.png">
+						<blockquote style="direction: rtl;">
+							<h6>&ldquo;یک زبان برنامه نویسی<br>  تک نخی (single-thread) <br>   غیر مسدود شده(non-blocking) <br> نا همگام (async) <br> می باشد &rdquo;</h6>
+						</blockquote>
+				</section>
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<img style="height:250px; width:250px;" data-src="./images/myAvatar1.png">
+						<blockquote>
+							<h6>&ldquo;....)):&rdquo;</h6>
+						</blockquote>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" >
+						<img style="height:250px; width:250px;" data-src="./images/google.png">
+						<blockquote style="direction: rtl;">
+							<h6>&ldquo;یک زبان برنامه نویسی<h6 class="fragment grow">  تک نخی (single-thread) </h6> <h6 class="fragment grow">   غیر مسدود شده(non-blocking) </h6> <h6 class="fragment grow"> نا همگام (async) </h6> می باشد &rdquo;</h6>
+						</blockquote>
+				</section>
+
+
+				<section>
+					<section id="fragments">
+						<h3 class="fragment fragment fade-in-then-semi-out">9 months passed...</h3>
+						<h3 class="fragment">threads</h3>
+						<h3 class="fragment">async</h3>
+						<h3 class="fragment">blocking</h3>
+						<img class="fragment" style="height:250px; width:250px;" data-src="./images/myAvatar.png">
+					</section>
+				</section>
+
+
+				
+				<section >
+					<section id="fragments">
+						<div class = "fragment" style="position: absolute; width: 40%;  box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+								<ul>
+									<li><span class="fragment highlight-blue">Async</span></li>
+									<li><span class="fragment highlight-blue">Non-blocking</span></li>
+									<li>One-thread</li>
+								</ul>
+						</div>
+						<div class = "fragment" style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;" >
+								<ul>
+									<li><span class="fragment highlight-red">Sync</span></li>
+									<li><span class="fragment highlight-red">Blocking</span></li>
+									<li>Multi-thread</li>
+								</ul>
+						</div>
+					</section>
+				</section>
+
+				<section data-background="#4682B4" data-transition="zoom">
+					<h3 style="color:#ffffff;padding:13px 10px 10px 10px;border-radius:3px;">Single-thread</h3>
+					<h3 style="color:#ffffff;padding:13px 10px 10px 10px;border-radius:3px;">Non-blocking</h3>
+					<h2 style="display:block;background:rgba(255, 255, 255, 0.274);color:#ffffff;padding:13px 10px 10px 10px;border-radius:3px;">ASYNCHRONOUS</h2>	
+					<section id="fragments">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+							<img class="fragment" data-src="./images/giphy.gif">
+					</section>
+				</section>
+				
+				<section data-background="./images/screen1.png">
+				</section>
+
+				<section data-background="#DC143C" data-transition="zoom">
+					<h3 style="color:#ffffff;padding:13px 10px 10px 10px;border-radius:3px;">Multi-thread</h3>
+					<h3 style="color:#ffffff;padding:13px 10px 10px 10px;border-radius:3px;">Blocking</h3>
+					<h2 style="display:block;background:rgba(255, 255, 255, 0.274);color:#ffffff;padding:13px 10px 10px 10px;border-radius:3px;">SYNCHRONOUS</h2>	
+					<section id="fragments">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+							<img class="fragment" data-src="./images/giphy2.gif">
+					</section>
+				</section>
+
+				<section data-background="./images/screen2.png">
+				</section>
+
+				<section data-background="./images/screen3.png">
+					<p style="color:#ffffff;">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<span style="display: inline-block;" class="fragment fade-down">All threads BUSY!</span>
+					</p>
+				</section>
+
+				<section data-background="./images/screen4.png">
+				</section>
+
+				<section data-background="./images/screen5.png" data-transition="zoom">
+				</section>
+
+				<section >
+						<div style="position: absolute; width: 40%;  box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+								<h1 style="color:#ffffff">ASYNC</h1>
+								<ul>
+									<li>Javascript</li>
+									<li>Node.js</li>
+									<li>:/</li>
+								</ul>
+						</div>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h1 style="color:#ffffff">SYNC</h1>
+								<ul>
+									<li>Python</li>
+									<li>C#</li>
+									<li>Java</li>
+									<li>PHP</li>
+									<li>...</li>
+								</ul>
+						</div>
+				</section>
+
+				<section>
+					<h1 style="direction: rtl;">کدام یک؟.......</h1>
+				</section>
+
+				<section >
+					<section id="fragments">
+						<div class = "fragment" style="position: absolute; width: 40%;  box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2  style="color:#ffffff">ASYNC (js) </h2>
+								<ul>
+									<li><span class="fragment highlight-blue">I/O-intensive</span></li>
+									<li><span class="fragment highlight-blue">Real-time apps</span></li>
+								</ul>
+						</div>
+						<div class = "fragment" style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;" >
+								<h2  style="color:#ffffff">SYNC (python) </h2>
+								<ul>
+									<li><span class="fragment highlight-red">CPU-intensive</span></li>
+									<li><span class="fragment highlight-red">Calculation</span></li>
+								</ul>
+						</div>
+					</section>
+				</section>
+
+
+				<section data-background="./images/screen6.png" data-transition="zoom">
+				</section>
+
+				<section data-background="./images/screen4.png" data-transition="zoom">
+				</section>
+
+				<section>
+					<h1 style="direction: rtl;">و اینکه .....</h1>
+				</section>
+
+				<section>
+						<img class="fragment fade-in-then-semi-out" style="height:250px; width:400px;" data-src="./images/pride.jpg">
+						<img class="fragment fade-in-then-semi-out" style="height:250px; width:400px;" data-src="./images/vanet-pride.jpg">
+						<img class="fragment" style="height:250px; width:400px;" data-src="./images/neisan.jpg">
+				</section>
+
+
+				<section>
+					<h1 style="direction: rtl;">سخن پایانی .....</h1>
+				</section>
+
+
+				<section>
+					<img style="height:250px; width:250px;" data-src="./images/myAvatar2.png">
+				</section>
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
