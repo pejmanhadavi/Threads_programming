@@ -3,7 +3,8 @@ A presentation for learning and Getting acquainted with reveal js
 
 ### How to run
 ```bash
-https://github.com/phc613/Threads_programming.git
+git clone https://github.com/phc613/Threads_programming.git
+cd ./Threads_programming
 npm i
 firefox index.js
 ```
